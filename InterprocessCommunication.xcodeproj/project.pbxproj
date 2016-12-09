@@ -15,6 +15,7 @@
 		1D7D37F71DFAE53B00970074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7D37F61DFAE53B00970074 /* Assets.xcassets */; };
 		1D7D37FA1DFAE53B00970074 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D7D37F81DFAE53B00970074 /* MainMenu.xib */; };
 		1D7D38001DFAE63900970074 /* Bridge.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D7D37F21DFAE53B00970074 /* Bridge.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1D7D38021DFAE73000970074 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38011DFAE73000970074 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,7 @@
 		1D7D37F61DFAE53B00970074 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D7D37F91DFAE53B00970074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1D7D37FB1DFAE53B00970074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D7D38011DFAE73000970074 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				1D7D37F61DFAE53B00970074 /* Assets.xcassets */,
 				1D7D37F81DFAE53B00970074 /* MainMenu.xib */,
 				1D7D37FB1DFAE53B00970074 /* Info.plist */,
+				1D7D38011DFAE73000970074 /* main.swift */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7D38021DFAE73000970074 /* main.swift in Sources */,
 				1D7D37F51DFAE53B00970074 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
