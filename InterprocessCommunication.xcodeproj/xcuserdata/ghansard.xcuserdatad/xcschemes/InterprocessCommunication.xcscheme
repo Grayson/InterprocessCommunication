@@ -20,6 +20,20 @@
                ReferencedContainer = "container:InterprocessCommunication.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1D7D37F11DFAE53B00970074"
+               BuildableName = "Bridge.app"
+               BlueprintName = "Bridge"
+               ReferencedContainer = "container:InterprocessCommunication.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
