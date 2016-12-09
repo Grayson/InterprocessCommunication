@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+class XPCDelegate: NSObject, NSXPCListenerDelegate {
+	func listener(_ listener: NSXPCListener, shouldAcceptNewConnection newConnection: NSXPCConnection) -> Bool {
+		newConnection.exportedInterface = NSXPCInterface(with: PingService.self)
+		newConnection.exportedObject = Ping()
+		newConnection.resume()
+		return true
+	}
+}
+
+let delegate = XPCDelegate()
+let listener = NSXPCListener.service()
+listener.delegate = delegate
+listener.resume()
