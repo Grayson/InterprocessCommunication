@@ -16,6 +16,8 @@
 		1D7D37FA1DFAE53B00970074 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D7D37F81DFAE53B00970074 /* MainMenu.xib */; };
 		1D7D38001DFAE63900970074 /* Bridge.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D7D37F21DFAE53B00970074 /* Bridge.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1D7D38021DFAE73000970074 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38011DFAE73000970074 /* main.swift */; };
+		1D7D380C1DFAE92D00970074 /* PingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D380A1DFAE92D00970074 /* PingService.swift */; };
+		1D7D380D1DFAE93000970074 /* PingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D380A1DFAE92D00970074 /* PingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +46,7 @@
 		1D7D37F91DFAE53B00970074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1D7D37FB1DFAE53B00970074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D7D38011DFAE73000970074 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1D7D380A1DFAE92D00970074 /* PingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 		1D7D37F31DFAE53B00970074 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
+				1D7D380A1DFAE92D00970074 /* PingService.swift */,
 				1D7D37F41DFAE53B00970074 /* AppDelegate.swift */,
 				1D7D37F61DFAE53B00970074 /* Assets.xcassets */,
 				1D7D37F81DFAE53B00970074 /* MainMenu.xib */,
@@ -213,6 +217,7 @@
 			files = (
 				1D7D37E21DFAE4F600970074 /* ViewController.swift in Sources */,
 				1D7D37E01DFAE4F600970074 /* AppDelegate.swift in Sources */,
+				1D7D380D1DFAE93000970074 /* PingService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +227,7 @@
 			files = (
 				1D7D38021DFAE73000970074 /* main.swift in Sources */,
 				1D7D37F51DFAE53B00970074 /* AppDelegate.swift in Sources */,
+				1D7D380C1DFAE92D00970074 /* PingService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
