@@ -7,20 +7,35 @@
 //
 
 import Cocoa
+import ServiceManagement
+
+private func activateLoginItems(from bundle: Bundle, using fileManager: FileManager) {
+	let loginItemsFolder = bundle.bundleURL.appendingPathComponent("Contents").appendingPathComponent("Library").appendingPathComponent("LoginItems")
+	let items = try! fileManager.contentsOfDirectory(atPath: loginItemsFolder.path)
+
+	for item in items {
+		guard
+			let bundle = Bundle(path: item),
+			let bundleIdentifier = bundle.bundleIdentifier
+		else { continue }
+		SMLoginItemSetEnabled(bundleIdentifier as CFString, true)
+	}
+}
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
+	let xpcConnection = NSXPCConnection(machServiceName: "com.fromconcentratesoftware.Bridge", options: [])
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
-		// Insert code here to initialize your application
-	}
+		activateLoginItems(from: Bundle.main, using: FileManager.default)
 
-	func applicationWillTerminate(_ aNotification: Notification) {
-		// Insert code here to tear down your application
+		xpcConnection.remoteObjectInterface = NSXPCInterface(with: PingService.self)
+		xpcConnection.resume()
+		(xpcConnection.remoteObjectProxy as? PingService)?.ping {
+			print("Got pong!")
+		}
 	}
-
 
 }
 
