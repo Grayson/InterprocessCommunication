@@ -14,7 +14,21 @@
 		1D7D37F51DFAE53B00970074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D37F41DFAE53B00970074 /* AppDelegate.swift */; };
 		1D7D37F71DFAE53B00970074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7D37F61DFAE53B00970074 /* Assets.xcassets */; };
 		1D7D37FA1DFAE53B00970074 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D7D37F81DFAE53B00970074 /* MainMenu.xib */; };
+		1D7D38001DFAE63900970074 /* Bridge.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D7D37F21DFAE53B00970074 /* Bridge.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1D7D37FF1DFAE61300970074 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				1D7D38001DFAE63900970074 /* Bridge.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D7D37DC1DFAE4F600970074 /* InterprocessCommunication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterprocessCommunication.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +113,7 @@
 				1D7D37D81DFAE4F600970074 /* Sources */,
 				1D7D37D91DFAE4F600970074 /* Frameworks */,
 				1D7D37DA1DFAE4F600970074 /* Resources */,
+				1D7D37FF1DFAE61300970074 /* CopyFiles */,
 			);
 			buildRules = (
 			);
