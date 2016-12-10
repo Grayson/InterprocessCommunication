@@ -9,8 +9,11 @@
 import Foundation
 
 class Client: CommunicationClient {
+	typealias MessageReceivedCallback = (String) -> ()
+	var onMessageReceived: MessageReceivedCallback = { _ in }
+
 	func receive(message: String) {
-		print(message)
+		onMessageReceived(message)
 	}
 }
 
