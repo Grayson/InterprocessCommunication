@@ -24,6 +24,7 @@
 		1D7D38131DFAF11200970074 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38121DFAF11200970074 /* Server.swift */; };
 		1D7D38141DFAF11700970074 /* CommunicationServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D380E1DFAF0AF00970074 /* CommunicationServer.swift */; };
 		1D7D38151DFAF11700970074 /* CommunicationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38101DFAF0BD00970074 /* CommunicationClient.swift */; };
+		1D7D38171DFAF34700970074 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38161DFAF34700970074 /* Client.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +58,7 @@
 		1D7D380E1DFAF0AF00970074 /* CommunicationServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationServer.swift; sourceTree = "<group>"; };
 		1D7D38101DFAF0BD00970074 /* CommunicationClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationClient.swift; sourceTree = "<group>"; };
 		1D7D38121DFAF11200970074 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		1D7D38161DFAF34700970074 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				1D7D37E31DFAE4F600970074 /* Assets.xcassets */,
 				1D7D37E51DFAE4F600970074 /* Main.storyboard */,
 				1D7D37E81DFAE4F600970074 /* Info.plist */,
+				1D7D38161DFAF34700970074 /* Client.swift */,
 			);
 			path = InterprocessCommunication;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				1D7D37E21DFAE4F600970074 /* ViewController.swift in Sources */,
 				1D7D38141DFAF11700970074 /* CommunicationServer.swift in Sources */,
+				1D7D38171DFAF34700970074 /* Client.swift in Sources */,
 				1D7D37E01DFAE4F600970074 /* AppDelegate.swift in Sources */,
 				1D7D38151DFAF11700970074 /* CommunicationClient.swift in Sources */,
 				1D7D380D1DFAE93000970074 /* PingService.swift in Sources */,
