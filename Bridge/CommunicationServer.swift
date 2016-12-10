@@ -10,5 +10,5 @@ import Foundation
 
 @objc protocol CommunicationServer {
 	func register(client: NSXPCListenerEndpoint)
-	func broadcast(message: String)
+	func broadcast(message: Message)
 }
