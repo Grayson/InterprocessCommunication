@@ -35,6 +35,8 @@
 		1D7D382F1DFC6BF300970074 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D382E1DFC6BF300970074 /* Message.swift */; };
 		1D7D38301DFC75BD00970074 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D382E1DFC6BF300970074 /* Message.swift */; };
 		1D7D38311DFC75BE00970074 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D382E1DFC6BF300970074 /* Message.swift */; };
+		1D7D38341DFC7ABE00970074 /* Message+AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38321DFC7AAB00970074 /* Message+AttributedString.swift */; };
+		1D7D38351DFC7ABF00970074 /* Message+AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38321DFC7AAB00970074 /* Message+AttributedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +78,7 @@
 		1D7D38251DFC2AC700970074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D7D38271DFC2AC700970074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D7D382E1DFC6BF300970074 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		1D7D38321DFC7AAB00970074 /* Message+AttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+AttributedString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,7 @@
 				1D7D38101DFAF0BD00970074 /* CommunicationClient.swift */,
 				1D7D38121DFAF11200970074 /* Server.swift */,
 				1D7D382E1DFC6BF300970074 /* Message.swift */,
+				1D7D38321DFC7AAB00970074 /* Message+AttributedString.swift */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -303,12 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7D38341DFC7ABE00970074 /* Message+AttributedString.swift in Sources */,
 				1D7D37E21DFAE4F600970074 /* ViewController.swift in Sources */,
 				1D7D38141DFAF11700970074 /* CommunicationServer.swift in Sources */,
 				1D7D38171DFAF34700970074 /* Client.swift in Sources */,
 				1D7D37E01DFAE4F600970074 /* AppDelegate.swift in Sources */,
 				1D7D38151DFAF11700970074 /* CommunicationClient.swift in Sources */,
 				1D7D380D1DFAE93000970074 /* PingService.swift in Sources */,
+				1D7D38311DFC75BE00970074 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7D38351DFC7ABF00970074 /* Message+AttributedString.swift in Sources */,
 				1D7D38211DFC2AC600970074 /* ViewController.swift in Sources */,
 				1D7D382B1DFC2AE900970074 /* CommunicationClient.swift in Sources */,
 				1D7D382C1DFC2AF100970074 /* Client.swift in Sources */,

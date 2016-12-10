@@ -18,9 +18,11 @@ class ViewController: NSViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		let ownClientName = name
 		(NSApp.delegate as! AppDelegate).listenerDelegate.client.onMessageReceived = { [textView] msg in
+			let attributedString = msg.convertToAttributedString(ownClientName: ownClientName)
 			DispatchQueue.main.async {
-				textView?.textStorage?.append(NSAttributedString(string: msg + "\n"))
+				textView?.textStorage?.append(attributedString)
 				textView?.scrollToEndOfDocument(nil)
 			}
 		}
