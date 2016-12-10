@@ -19,6 +19,10 @@
 		1D7D380B1DFAE92D00970074 /* Ping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38091DFAE92D00970074 /* Ping.swift */; };
 		1D7D380C1DFAE92D00970074 /* PingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D380A1DFAE92D00970074 /* PingService.swift */; };
 		1D7D380D1DFAE93000970074 /* PingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D380A1DFAE92D00970074 /* PingService.swift */; };
+		1D7D380F1DFAF0AF00970074 /* CommunicationServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D380E1DFAF0AF00970074 /* CommunicationServer.swift */; };
+		1D7D38111DFAF0BD00970074 /* CommunicationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38101DFAF0BD00970074 /* CommunicationClient.swift */; };
+		1D7D38141DFAF11700970074 /* CommunicationServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D380E1DFAF0AF00970074 /* CommunicationServer.swift */; };
+		1D7D38151DFAF11700970074 /* CommunicationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38101DFAF0BD00970074 /* CommunicationClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +53,8 @@
 		1D7D38011DFAE73000970074 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1D7D38091DFAE92D00970074 /* Ping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ping.swift; sourceTree = "<group>"; };
 		1D7D380A1DFAE92D00970074 /* PingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingService.swift; sourceTree = "<group>"; };
+		1D7D380E1DFAF0AF00970074 /* CommunicationServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationServer.swift; sourceTree = "<group>"; };
+		1D7D38101DFAF0BD00970074 /* CommunicationClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,8 @@
 				1D7D37F81DFAE53B00970074 /* MainMenu.xib */,
 				1D7D37FB1DFAE53B00970074 /* Info.plist */,
 				1D7D38011DFAE73000970074 /* main.swift */,
+				1D7D380E1DFAF0AF00970074 /* CommunicationServer.swift */,
+				1D7D38101DFAF0BD00970074 /* CommunicationClient.swift */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -219,7 +227,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D7D37E21DFAE4F600970074 /* ViewController.swift in Sources */,
+				1D7D38141DFAF11700970074 /* CommunicationServer.swift in Sources */,
 				1D7D37E01DFAE4F600970074 /* AppDelegate.swift in Sources */,
+				1D7D38151DFAF11700970074 /* CommunicationClient.swift in Sources */,
 				1D7D380D1DFAE93000970074 /* PingService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,9 +239,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D7D380B1DFAE92D00970074 /* Ping.swift in Sources */,
+				1D7D38111DFAF0BD00970074 /* CommunicationClient.swift in Sources */,
 				1D7D38021DFAE73000970074 /* main.swift in Sources */,
 				1D7D37F51DFAE53B00970074 /* AppDelegate.swift in Sources */,
 				1D7D380C1DFAE92D00970074 /* PingService.swift in Sources */,
+				1D7D380F1DFAF0AF00970074 /* CommunicationServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
