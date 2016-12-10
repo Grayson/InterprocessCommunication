@@ -26,15 +26,23 @@ private func activateLoginItems(from bundle: Bundle, using fileManager: FileMana
 class AppDelegate: NSObject, NSApplicationDelegate {
 
 	let xpcConnection = NSXPCConnection(machServiceName: "com.fromconcentratesoftware.Bridge", options: [])
+	let listener = NSXPCListener.anonymous()
+	let listenerDelegate: ClientListenerDelegate
+
+	override init() {
+		let client = Client()
+		listenerDelegate = ClientListenerDelegate(client: client)
+		listener.delegate = listenerDelegate
+	}
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
 		activateLoginItems(from: Bundle.main, using: FileManager.default)
 
-		xpcConnection.remoteObjectInterface = NSXPCInterface(with: PingService.self)
+		listener.resume()
+
+		xpcConnection.remoteObjectInterface = NSXPCInterface(with: CommunicationServer.self)
 		xpcConnection.resume()
-		(xpcConnection.remoteObjectProxy as? PingService)?.ping {
-			print("Got pong!")
-		}
+		(xpcConnection.remoteObjectProxy as? CommunicationServer)?.register(client: listener.endpoint)
 	}
 
 }

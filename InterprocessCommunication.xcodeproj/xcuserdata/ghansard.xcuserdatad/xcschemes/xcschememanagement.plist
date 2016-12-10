@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>ClientDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>InterprocessCommunication.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>1D7D37F11DFAE53B00970074</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1D7D381B1DFC2AC600970074</key>
 		<dict>
 			<key>primary</key>
 			<true/>
