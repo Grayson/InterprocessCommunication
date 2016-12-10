@@ -21,6 +21,7 @@
 		1D7D380D1DFAE93000970074 /* PingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D380A1DFAE92D00970074 /* PingService.swift */; };
 		1D7D380F1DFAF0AF00970074 /* CommunicationServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D380E1DFAF0AF00970074 /* CommunicationServer.swift */; };
 		1D7D38111DFAF0BD00970074 /* CommunicationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38101DFAF0BD00970074 /* CommunicationClient.swift */; };
+		1D7D38131DFAF11200970074 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38121DFAF11200970074 /* Server.swift */; };
 		1D7D38141DFAF11700970074 /* CommunicationServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D380E1DFAF0AF00970074 /* CommunicationServer.swift */; };
 		1D7D38151DFAF11700970074 /* CommunicationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38101DFAF0BD00970074 /* CommunicationClient.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		1D7D380A1DFAE92D00970074 /* PingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingService.swift; sourceTree = "<group>"; };
 		1D7D380E1DFAF0AF00970074 /* CommunicationServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationServer.swift; sourceTree = "<group>"; };
 		1D7D38101DFAF0BD00970074 /* CommunicationClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationClient.swift; sourceTree = "<group>"; };
+		1D7D38121DFAF11200970074 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				1D7D38011DFAE73000970074 /* main.swift */,
 				1D7D380E1DFAF0AF00970074 /* CommunicationServer.swift */,
 				1D7D38101DFAF0BD00970074 /* CommunicationClient.swift */,
+				1D7D38121DFAF11200970074 /* Server.swift */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7D38131DFAF11200970074 /* Server.swift in Sources */,
 				1D7D380B1DFAE92D00970074 /* Ping.swift in Sources */,
 				1D7D38111DFAF0BD00970074 /* CommunicationClient.swift in Sources */,
 				1D7D38021DFAE73000970074 /* main.swift in Sources */,
