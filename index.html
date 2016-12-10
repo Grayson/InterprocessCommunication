@@ -18,7 +18,7 @@
       <div class="inner">
 
         <header>
-          <h1>Interprocesscommunication</h1>
+          <h1>InterprocessCommunication</h1>
           <h2>Simple demonstration of using XPC to send messages between macOS apps</h2>
         </header>
 
@@ -37,6 +37,10 @@
 <p>This is a small document that walks through the general approach to setting up XPC services as implemented in the <a href="https://github.com/Grayson/InterprocessCommunication">InterprocessCommunication repository</a>.  It's not a step-by-step tutorial, but it should demonstrate the basic steps and highlight some of the more important caveats and potential problems.  Not every commit is mentioned, but I'm hoping that the commits are small enough to be easily understandable if you really wanted to see each and every step.</p>
 
 <p>You should also note that this code is not of production quality.  The demonstration is merely a simple example of how to send messages between multiple applications using XPC.  Error handling and proper server/client architecture are not implemented in favor of simplification.</p>
+
+<p>The final result of this project is a few simple applications that send data back and forth to each other.</p>
+
+<img src="images/demo.gif" />
 
 <h2>
 <a id="setup" class="anchor" href="#setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup</h2>
