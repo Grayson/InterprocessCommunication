@@ -32,6 +32,9 @@
 		1D7D382B1DFC2AE900970074 /* CommunicationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38101DFAF0BD00970074 /* CommunicationClient.swift */; };
 		1D7D382C1DFC2AF100970074 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D38161DFAF34700970074 /* Client.swift */; };
 		1D7D382D1DFC2B2900970074 /* CommunicationServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D380E1DFAF0AF00970074 /* CommunicationServer.swift */; };
+		1D7D382F1DFC6BF300970074 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D382E1DFC6BF300970074 /* Message.swift */; };
+		1D7D38301DFC75BD00970074 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D382E1DFC6BF300970074 /* Message.swift */; };
+		1D7D38311DFC75BE00970074 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D382E1DFC6BF300970074 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,6 +75,7 @@
 		1D7D38221DFC2AC600970074 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D7D38251DFC2AC700970074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D7D38271DFC2AC700970074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D7D382E1DFC6BF300970074 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 				1D7D380E1DFAF0AF00970074 /* CommunicationServer.swift */,
 				1D7D38101DFAF0BD00970074 /* CommunicationClient.swift */,
 				1D7D38121DFAF11200970074 /* Server.swift */,
+				1D7D382E1DFC6BF300970074 /* Message.swift */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 				1D7D38111DFAF0BD00970074 /* CommunicationClient.swift in Sources */,
 				1D7D38021DFAE73000970074 /* main.swift in Sources */,
 				1D7D37F51DFAE53B00970074 /* AppDelegate.swift in Sources */,
+				1D7D382F1DFC6BF300970074 /* Message.swift in Sources */,
 				1D7D380C1DFAE92D00970074 /* PingService.swift in Sources */,
 				1D7D380F1DFAF0AF00970074 /* CommunicationServer.swift in Sources */,
 			);
@@ -328,6 +334,7 @@
 				1D7D38211DFC2AC600970074 /* ViewController.swift in Sources */,
 				1D7D382B1DFC2AE900970074 /* CommunicationClient.swift in Sources */,
 				1D7D382C1DFC2AF100970074 /* Client.swift in Sources */,
+				1D7D38301DFC75BD00970074 /* Message.swift in Sources */,
 				1D7D381F1DFC2AC600970074 /* AppDelegate.swift in Sources */,
 				1D7D382D1DFC2B2900970074 /* CommunicationServer.swift in Sources */,
 			);
