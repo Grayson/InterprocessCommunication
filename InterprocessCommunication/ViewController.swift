@@ -10,18 +10,24 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+	@IBOutlet var textView: NSTextView?
+	@IBOutlet weak var textField: NSTextField?
+
+	private var server: CommunicationServer { return (NSApp.delegate as! AppDelegate).xpcConnection.remoteObjectProxy as! CommunicationServer }
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
-		// Do any additional setup after loading the view.
-	}
-
-	override var representedObject: Any? {
-		didSet {
-		// Update the view, if already loaded.
+		(NSApp.delegate as! AppDelegate).listenerDelegate.client.onMessageReceived = { [textView] msg in
+			DispatchQueue.main.async {
+				textView?.textStorage?.append(NSAttributedString(string: msg + "\n"))
+				textView?.scrollToEndOfDocument(nil)
+			}
 		}
 	}
 
-
+	@IBAction func send(_ sender: Any) {
+		guard let msg = textField?.stringValue else { return }
+		server.broadcast(message: msg)
+	}
 }
 
