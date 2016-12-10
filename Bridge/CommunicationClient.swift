@@ -9,5 +9,5 @@
 import Foundation
 
 @objc protocol CommunicationClient {
-	func receive(message: String)
+	func receive(message: Message)
 }
