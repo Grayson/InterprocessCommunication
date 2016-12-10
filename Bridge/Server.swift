@@ -16,8 +16,8 @@ class Server: CommunicationServer {
 		connection.remoteObjectInterface = NSXPCInterface(with: CommunicationClient.self)
 		connection.resume()
 		if let client = connection.remoteObjectProxy as? CommunicationClient {
-			client.receive(message: "Registered")
 			clientConnections.append(connection)
+			broadcast(message: "Registered \(clientConnections.count) connections")
 		}
 	}
 
