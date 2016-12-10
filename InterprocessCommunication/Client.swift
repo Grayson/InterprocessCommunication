@@ -18,7 +18,7 @@ class Client: CommunicationClient {
 }
 
 class ClientListenerDelegate: NSObject, NSXPCListenerDelegate {
-	private let client: Client
+	let client: Client
 
 	init(client: Client) {
 		self.client = client
