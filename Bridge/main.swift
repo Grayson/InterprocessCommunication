@@ -23,3 +23,4 @@ let delegate = XPCDelegate()
 let listener = NSXPCListener(machServiceName: "com.fromconcentratesoftware.Bridge")
 listener.delegate = delegate
 listener.resume()
+RunLoop.current.run()
