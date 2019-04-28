@@ -21,8 +21,8 @@ import Foundation
 
 	required init?(coder aDecoder: NSCoder) {
 		guard
-			let sender = aDecoder.decodeObject(of: NSString.self, forKey: "sender") as? String,
-			let value = aDecoder.decodeObject(of: NSString.self, forKey: "value") as? String
+			let sender = aDecoder.decodeObject(of: NSString.self, forKey: "sender") as String?,
+			let value = aDecoder.decodeObject(of: NSString.self, forKey: "value") as String?
 		else { return nil }
 
 		self.sender = sender
