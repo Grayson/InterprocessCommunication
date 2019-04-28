@@ -1,0 +1,8 @@
+title: Interprocesscommunication
+description: Simple demonstration of using XPC to send messages between macOS apps
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-tactile
+
+gems:
+  - jekyll-mentions
