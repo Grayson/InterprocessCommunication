@@ -18,7 +18,9 @@ private func activateLoginItems(from bundle: Bundle, using fileManager: FileMana
 			let bundle = Bundle(path: item),
 			let bundleIdentifier = bundle.bundleIdentifier
 		else { continue }
-		SMLoginItemSetEnabled(bundleIdentifier as CFString, true)
+		if !SMLoginItemSetEnabled(bundleIdentifier as CFString, true) {
+			print("Unable to enable \(bundleIdentifier)")
+		}
 	}
 }
 
