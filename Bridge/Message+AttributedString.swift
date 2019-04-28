@@ -24,17 +24,10 @@ extension Message {
 			paragraphStyle.alignment = NSTextAlignment.right;
 		}
 
-		return NSAttributedString(string: self.value + "\n", attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.paragraphStyle): paragraphStyle, convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): textColor]))
+		let attributes = [
+			NSAttributedString.Key.paragraphStyle: paragraphStyle,
+			NSAttributedString.Key.foregroundColor: textColor,
+		]
+		return NSAttributedString(string: self.value + "\n", attributes: attributes)
 	}
-}
-
-// Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
-	guard let input = input else { return nil }
-	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
-}
-
-// Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
-	return input.rawValue
 }
