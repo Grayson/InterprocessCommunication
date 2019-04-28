@@ -20,6 +20,6 @@ class XPCDelegate: NSObject, NSXPCListenerDelegate {
 }
 
 let delegate = XPCDelegate()
-let listener = NSXPCListener.service()
+let listener = NSXPCListener(machServiceName: "com.fromconcentratesoftware.Bridge")
 listener.delegate = delegate
 listener.resume()
